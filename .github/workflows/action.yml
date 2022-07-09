@@ -7,10 +7,10 @@ jobs:
     runs-on: self-hosted
     name: import
     steps:
-#       - name: import
-#         uses: tw3lveparsecs/github-actions-setvars@v0.1
-#         with:
-#           envFilePath: ./vars.env
+      - name: import
+        uses: tw3lveparsecs/github-actions-setvars@v0.1
+        with:
+          envFilePath: /home/cloud_user/vars.env
 
       - name: output
         run: |
