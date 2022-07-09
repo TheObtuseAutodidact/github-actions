@@ -14,8 +14,10 @@ jobs:
 
       - name: output
         run: | 
+          pwd
+          ls -la
           cd ..
           pwd
-          ls
+          ls -la
           echo 'hello, world'
           echo $HOSTNAME
