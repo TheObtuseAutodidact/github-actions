@@ -10,7 +10,7 @@ jobs:
       - name: import
         uses: tw3lveparsecs/github-actions-setvars@v0.1
         with:
-          envFilePath: ./drop/.github/variables/vars.env
+          envFilePath: ./vars.env
 
       - name: output
         run: | 
