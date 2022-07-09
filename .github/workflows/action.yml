@@ -3,8 +3,16 @@ name: Must run on custom runner
 on: push
 
 jobs:
-  init:
-    runs-on: self-hosted
+  set-vars-from-file:
+    runs-on: push
+    name: import
     steps:
-      - run: echo 'hello, world'
-      - run: echo $HOSTNAME
+      - name: import
+        uses: tw3lveparsecs/github-actions-setvars@v0.1
+        with:
+          envFilePath: ./drop/.github/variables/vars.env
+
+      - name: output
+        run: | 
+          echo 'hello, world'
+          echo $HOSTNAME
