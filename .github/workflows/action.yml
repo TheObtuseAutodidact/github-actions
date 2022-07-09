@@ -8,3 +8,4 @@ jobs:
     steps:
       - run: echo 'hello, world!'
       - run: echo $HOSTNAME
+      - run: echo 'c\'mon'
