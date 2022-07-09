@@ -14,11 +14,9 @@ jobs:
 
       - name: output
         run: |
-          ls ./github-actions/
           pwd
-          ls -la
-          cd ..
-          pwd
-          ls -la
           echo 'hello, world'
           echo $HOSTNAME
+          echo 'FOO = $FOO'
+          echo 'BAR = $BAR'
+          echo 'BAZ = $BAZ'
