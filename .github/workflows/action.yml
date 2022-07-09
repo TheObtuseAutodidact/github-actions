@@ -4,13 +4,13 @@ on: push
 
 jobs:
   set-vars-from-file:
-    runs-on: push
+    runs-on: self-hosted
     name: import
     steps:
       - name: import
         uses: tw3lveparsecs/github-actions-setvars@v0.1
         with:
-          envFilePath: ./github-actions/vars.env
+          envFilePath: ./vars.env
 
       - name: output
         run: | 
