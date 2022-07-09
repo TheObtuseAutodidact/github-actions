@@ -13,8 +13,7 @@ jobs:
 #           envFilePath: ./vars.env
 
       - name: output
-        run: | 
-          ls ./github-actions/
+        run: |
           pwd
           ls -la
           cd ..
