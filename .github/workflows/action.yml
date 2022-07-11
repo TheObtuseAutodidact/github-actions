@@ -15,7 +15,7 @@ jobs:
       - name: import
         uses: tw3lveparsecs/github-actions-setvars@v0.1
         with:
-          envFilePath: /home/cloud_user/vars.env
+          envFilePath: github-actions/github-actions/vars.env
 
       - name: output
         run: |
