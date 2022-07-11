@@ -12,10 +12,10 @@ jobs:
         with:
           repository: TheObtuseAutodidact/github-actions
           
-      - name: import
-        uses: tw3lveparsecs/github-actions-setvars@v0.1
-        with:
-          envFilePath: _work/github-actions/github-actions/vars.env
+#       - name: import
+#         uses: tw3lveparsecs/github-actions-setvars@v0.1
+#         with:
+#           envFilePath: _work/github-actions/github-actions/vars.env
 
       - name: output
         run: |
